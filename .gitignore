@@ -1,0 +1,14 @@
+result
+result-*
+
+.direnv/
+
+*.swp
+*.swo
+*.log
+
+node_modules/
+__pycache__/
+
+local.nix
+secrets.nix
