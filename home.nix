@@ -11,6 +11,7 @@ in
     ./modules/desktop.nix
     ./modules/git.nix
     ./modules/kitty.nix
+    ./modules/oh-my-posh.nix
     ./modules/tmux.nix
     ./modules/zsh.nix
   ];
