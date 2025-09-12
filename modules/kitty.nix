@@ -3,9 +3,16 @@
 {
   programs.kitty = {
     enable = true;
+    themeFile = "atelier-cave-dark";
+    enableGitIntegration = true;
+    shellIntegration = {
+      mode = "disabled";
+      enableBashIntegration = true;
+      enableZshIntegration = true;
+    };
     font = {
-      name = "JetBrainsMono Nerd Font";
-      size = 14;
+      name = "JetBrains Mono Nerd Font";
+      size = 12;
     };
     settings = {
       enable_audio_bell = "no";

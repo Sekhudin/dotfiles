@@ -12,6 +12,7 @@ in
     ./modules/git.nix
     ./modules/kitty.nix
     ./modules/oh-my-posh.nix
+    ./modules/starship.nix
     ./modules/tmux.nix
     ./modules/zsh.nix
   ];
@@ -22,7 +23,8 @@ in
 
   home.packages = with pkgs; [
     nixGLCmd
-    pkgs.nerd-fonts.jetbrains-mono
+    nerd-fonts.fira-code
+    nerd-fonts.jetbrains-mono
   ];
 
   home.sessionVariables = {
