@@ -7,7 +7,6 @@
     mouse = true;
     historyLimit = 10000;
     shell = "${pkgs.zsh}/bin/zsh";
-
     extraConfig = ''
       set -g prefix C-a
       unbind C-b

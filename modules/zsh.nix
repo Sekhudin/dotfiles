@@ -6,7 +6,6 @@
     enableVteIntegration = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
-
     initContent = ''
       if [ -f ~/.zshrc.manual ]; then
         source ~/.zshrc.manual
@@ -15,6 +14,6 @@
   };
 
   home.file = {
-    ".zshrc.manual".source = ../config/zsh/.zshrc.manual;
+    ".zshrc.manual".source = ../config/.zshrc.manual;
   };
 }

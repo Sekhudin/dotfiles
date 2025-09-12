@@ -5,7 +5,6 @@
      enable = true;
      userName = "sekhudin";
      userEmail = "sekhudinuap@gmail.com";
-
      extraConfig = {
        core = {
          editor = "nvim";
