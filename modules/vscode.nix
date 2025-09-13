@@ -6,35 +6,45 @@
   ];
 
   programs.vscode = {
-     enable = true;
-     mutableExtensionsDir = false;
-     profiles.default = {
-       enableUpdateCheck = true;
-       enableExtensionUpdateCheck = true;
-       userSettings = {
-         
-       };
-       extensions = [
-         pkgs.vscode-extensions.esbenp.prettier-vscode
-       ];
-     };
+    enable = true;
+    mutableExtensionsDir = false;
+    profiles.me = {
+      userSettings = {
+        "editor.tabSize" = 2;
+        "files.autoSave" = "afterDelay";
+        "editor.fontFamily" = "JetBrains Mono Nerd Font";
+        "editor.formatOnSave" = true;
 
-     profiles.me = {
-       userSettings = {
+        "[nix]" = {
+          "editor.defaultFormatter" = "nixpkgs-fmt";
+          "editor.formatOnSave" = true;
+        };
+      };
+      extensions = [
+        pkgs.vscode-extensions.bbenoist.nix
+        pkgs.vscode-extensions.biomejs.biome
+        pkgs.vscode-extensions.firsttris.vscode-jest-runner
+        pkgs.vscode-extensions.meganrogge.template-string-converter
+        pkgs.vscode-extensions.ritwickdey.liveserver
+        pkgs.vscode-extensions.esbenp.prettier-vscode
+        pkgs.vscode-extensions.bradlc.vscode-tailwindcss
+        pkgs.vscode-extensions.formulahendry.auto-close-tag
+        pkgs.vscode-extensions.formulahendry.auto-rename-tag
+        pkgs.vscode-extensions.christian-kohler.npm-intellisense
+        pkgs.vscode-extensions.christian-kohler.path-intellisense
+        pkgs.vscode-extensions.visualstudioexptteam.vscodeintellicode
+      ];
+    };
 
-       };
-       extensions = [
-         pkgs.vscode-extensions.esbenp.prettier-vscode
-       ];
-     };
-
-     profiles.work = {
-       userSettings = {
-
-       };
-       extensions = [
-       ];
-     };
+    profiles.work = {
+      userSettings = { };
+      extensions = [
+        pkgs.vscode-extensions.bbenoist.nix
+        pkgs.vscode-extensions.esbenp.prettier-vscode
+        pkgs.vscode-extensions.christian-kohler.path-intellisense
+        pkgs.vscode-extensions.visualstudioexptteam.vscodeintellicode
+      ];
+    };
   };
 
   home.shellAliases = {

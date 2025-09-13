@@ -8,6 +8,7 @@ let
 in
 {
   imports = [
+    ./modules/bash.nix
     ./modules/desktop.nix
     ./modules/git.nix
     ./modules/kitty.nix
@@ -26,11 +27,10 @@ in
     nixGLCmd
     nerd-fonts.fira-code
     nerd-fonts.jetbrains-mono
+    pkgs.nixpkgs-fmt
   ];
 
-  home.sessionVariables = {
-
-  };
+  home.sessionVariables = { };
 
   programs.home-manager.enable = true;
 }
