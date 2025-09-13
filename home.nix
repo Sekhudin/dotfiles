@@ -8,7 +8,6 @@ let
 in
 {
   imports = [
-    ./modules/bash.nix
     ./modules/desktop.nix
     ./modules/git.nix
     ./modules/kitty.nix
