@@ -14,6 +14,7 @@ in
     ./modules/oh-my-posh.nix
     ./modules/starship.nix
     ./modules/tmux.nix
+    ./modules/vscode.nix
     ./modules/zsh.nix
   ];
 
