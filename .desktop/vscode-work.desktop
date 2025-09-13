@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Visual Studio Code(Work)
-Comment=Code Editing. Redefined.
-Exec=/home/syaikhu/.nix-profile/bin/code --profile work --no-sandbox %F
-Icon=code
-Terminal=false
-Type=Application
-Categories=Development;IDE;
-StartupNotify=true

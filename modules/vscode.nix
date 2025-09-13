@@ -9,18 +9,29 @@
      enable = true;
      mutableExtensionsDir = false;
      profiles.default = {
+       enableUpdateCheck = true;
+       enableExtensionUpdateCheck = true;
+       userSettings = {
+         
+       };
        extensions = [
          pkgs.vscode-extensions.esbenp.prettier-vscode
        ];
      };
 
      profiles.me = {
+       userSettings = {
+
+       };
        extensions = [
          pkgs.vscode-extensions.esbenp.prettier-vscode
        ];
      };
 
      profiles.work = {
+       userSettings = {
+
+       };
        extensions = [
        ];
      };
