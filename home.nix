@@ -11,6 +11,7 @@ in
     ./modules/desktop.nix
     ./modules/git.nix
     ./modules/kitty.nix
+    ./modules/nvim.nix
     ./modules/oh-my-posh.nix
     ./modules/starship.nix
     ./modules/tmux.nix
@@ -27,6 +28,7 @@ in
     nerd-fonts.fira-code
     nerd-fonts.jetbrains-mono
     pkgs.nixpkgs-fmt
+    pkgs.ripgrep
   ];
 
   home.sessionVariables = { };

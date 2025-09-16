@@ -15,7 +15,7 @@
         "workbench.iconTheme" = "catppuccin-mocha";
         "editor.tabSize" = 2;
         "editor.formatOnSave" = true;
-        "editor.fontFamily" = "JetBrains Mono Nerd Font";
+        "editor.fontFamily" = "JetbrainsMono Nerd Font";
         "files.autoSave" = "afterDelay";
 
         "[nix]" = {
@@ -47,7 +47,7 @@
         "workbench.iconTheme" = "vscode-great-icons";
         "editor.tabSize" = 2;
         "editor.formatOnSave" = true;
-        "editor.fontFamily" = "JetBrains Mono Nerd Font";
+        "editor.fontFamily" = "JetbrainsMono Nerd Font";
         "files.autoSave" = "afterDelay";
 
         "[nix]" = {
