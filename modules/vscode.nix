@@ -72,4 +72,40 @@
     "code:me" = "code --profile me --no-sandbox";
     "code:work" = "code --profile work --no-sandbox";
   };
+
+  xdg.desktopEntries.code = {
+    name = "Visual Studio Code";
+    genericName = "Text Editor";
+    comment = "Code Editing. Redefined.";
+    exec = "code --no-sandbox %F";
+    icon = "vscode";
+    terminal = false;
+    type = "Application";
+    categories = [ "Utility" "TextEditor" "Development" "IDE" ];
+    startupNotify = true;
+    settings = {
+      Keywords = "code;vscode;editor";
+    };
+    actions = {
+      new-empty-window = {
+        name = "New Empty Window";
+        exec = "code --no-sandbox --new-window %F";
+        icon = "vscode";
+      };
+    };
+  };
+
+  xdg.desktopEntries.code-url-handler = {
+    name = "Visual Studio Code - URL Handler";
+    genericName = "Text Editor";
+    comment = "Code Editing. Redefined.";
+    exec = "code --no-sandbox --open-url %U";
+    icon = "vscode";
+    terminal = false;
+    type = "Application";
+    categories = [ "Utility" "TextEditor" "Development" "IDE" ];
+    startupNotify = true;
+    mimeType = [ "x-scheme-handler/vscode" ];
+    noDisplay = true;
+  };
 }

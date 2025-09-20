@@ -8,7 +8,6 @@ let
 in
 {
   imports = [
-    ./modules/desktop.nix
     ./modules/git.nix
     ./modules/kitty.nix
     ./modules/nvim.nix
@@ -27,11 +26,22 @@ in
     nixGLCmd
     nerd-fonts.fira-code
     nerd-fonts.jetbrains-mono
-    pkgs.nixpkgs-fmt
+    pkgs.gcc
+    pkgs.htop
+    pkgs.tree
+    pkgs.xclip
+    pkgs.gnumake
     pkgs.ripgrep
+    pkgs.nixpkgs-fmt
   ];
 
-  home.sessionVariables = { };
+  home.sessionVariables = { 
+
+  };
+
+  home.shellAliases = {
+    clipboard = "xclip -selection clipboard";
+  };
 
   programs.home-manager.enable = true;
 }
