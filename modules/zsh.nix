@@ -14,6 +14,6 @@
   };
 
   home.file = {
-    ".zshrc.manual".source = ../config/.zshrc.manual;
+    ".zshrc.manual".source = ../config/extra-shellrc.sh;
   };
 }
