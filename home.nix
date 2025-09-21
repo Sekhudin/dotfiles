@@ -9,6 +9,7 @@ in
 {
   imports = [
     ./modules/bash.nix
+    ./modules/fastfetch.nix
     ./modules/git.nix
     ./modules/kitty.nix
     ./modules/nvim.nix
@@ -26,14 +27,21 @@ in
 
   home.packages = with pkgs; [
     nixGLCmd
-    nerd-fonts.fira-code
     nerd-fonts.jetbrains-mono
+    pkgs.jq
+    pkgs.yq
+    pkgs.go
+    pkgs.fzf
+    pkgs.eza
+    pkgs.bat
     pkgs.gcc
     pkgs.htop
     pkgs.tree
     pkgs.xclip
     pkgs.gnumake
     pkgs.ripgrep
+    pkgs.nodejs_22
+    pkgs.python313
     pkgs.nixpkgs-fmt
   ];
 
