@@ -4,7 +4,91 @@
   programs.fastfetch = {
     enable = true;
     settings = {
-
+      logo = {
+        source = "nixos";
+        padding = {
+          right = 1;
+        };
+      };
+      modules = [
+        {
+          type = "title";
+          key = "User";
+          format = "{user-name}";
+        }
+        {
+          type = "title";
+          key = "Hostname";
+          format = "{host-name}";
+        }
+        {
+          type = "host";
+          key = "Model";
+        }
+        {
+          type = "os";
+          format = "{pretty-name} {version-id} {arch}";
+        }
+        "kernel"
+        "uptime"
+        {
+          type = "loadavg";
+          key = "Load Average";
+        }
+        "processes"
+        {
+          type = "wm";
+          key = "Window Manager";
+        }
+        {
+          type = "de";
+          key = "Desktop Environment";
+        }
+        "shell"
+        {
+          type = "terminal";
+          format = "{pretty-name} {version} {#37}█{#97}█ {#36}█{#96}█ {#35}█{#95}█ {#34}█{#94}█ {#33}█{#93}█ {#32}█{#92}█ {#31}█{#91}█ {#30}█{#90}█";
+        }
+        {
+          type = "packages";
+          format = "{all}";
+        }
+        {
+          type = "cpu";
+          key = "Temperature";
+          temp = true;
+          format = "{temperature}";
+        }
+        {
+          type = "cpu";
+          key = "CPU";
+          format = "{cores-logical} x {name}";
+        }
+        {
+          type = "gpu";
+          format = "{name}";
+        }
+        {
+          type = "memory";
+          key = "RAM";
+        }
+        {
+          type = "disk";
+          key = "Disk";
+          folders = "/";
+        }
+        {
+          type = "localip";
+          key = "LAN IP";
+          showIpv6 = true;
+          showPrefixLen = false;
+        }
+        {
+          type = "publicip";
+          key = "WAN IP";
+          timeout = 1000;
+        }
+      ];
     };
   };
 }

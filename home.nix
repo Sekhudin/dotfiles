@@ -25,9 +25,9 @@ in
   home.homeDirectory = "/home/syaikhu";
   home.stateVersion = "25.05";
 
-  home.packages = with pkgs; [
+  home.packages = [
     nixGLCmd
-    nerd-fonts.jetbrains-mono
+    pkgs.nerd-fonts.jetbrains-mono
     pkgs.jq
     pkgs.yq
     pkgs.go
@@ -45,9 +45,7 @@ in
     pkgs.nixpkgs-fmt
   ];
 
-  home.sessionVariables = { 
-
-  };
+  home.sessionVariables = { };
 
   home.shellAliases = {
     clipboard = "xclip -selection clipboard";
