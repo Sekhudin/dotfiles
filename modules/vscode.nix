@@ -16,8 +16,8 @@
         "editor.tabSize" = 2;
         "editor.formatOnSave" = true;
         "editor.fontFamily" = "JetbrainsMono Nerd Font";
+        "editor.fontLigatures" = true;
         "files.autoSave" = "afterDelay";
-
         "[nix]" = {
           "editor.defaultFormatter" = "nixpkgs-fmt";
           "editor.formatOnSave" = true;
@@ -48,8 +48,8 @@
         "editor.tabSize" = 2;
         "editor.formatOnSave" = true;
         "editor.fontFamily" = "JetbrainsMono Nerd Font";
+        "editor.fontLigatures" = true;
         "files.autoSave" = "afterDelay";
-
         "[nix]" = {
           "editor.defaultFormatter" = "nixpkgs-fmt";
           "editor.formatOnSave" = true;

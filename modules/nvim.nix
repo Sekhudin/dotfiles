@@ -1,22 +1,26 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
+
+let
+  nvimFlavor = "lazyvim";
+in
 {
 
   programs.neovim = {
     enable = true;
   };
 
-  # for nvchad purpose
-  home.file = {
-    ".config/nvim/lua".source = ../config/nvchad/lua;
-    ".config/nvim/stylua.toml".source = ../config/nvchad/stylua.toml;
-    ".config/nvim/init.lua".source = ../config/nvchad/init.lua;
-  };
-
-  # # for lazyvim purpose
-  # home.file = {
-
-  # };
+  home.file =
+    if nvimFlavor == "nvchad" then {
+      ".config/nvim/lua".source = ../config/nvchad/lua;
+      ".config/nvim/init.lua".source = ../config/nvchad/init.lua;
+      ".config/nvim/stylua.toml".source = ../config/nvchad/stylua.toml;
+    } else if nvimFlavor == "lazyvim" then {
+      ".config/nvim/lua".source = ../config/nvim/lua;
+      ".config/nvim/.neoconf.json".source = ../config/nvim/.neoconf.json;
+      ".config/nvim/init.lua".source = ../config/nvim/init.lua;
+      ".config/nvim/stylua.toml".source = ../config/nvim/stylua.toml;
+    } else { };
 
   xdg.desktopEntries.nvim = {
     name = "Neovim";
