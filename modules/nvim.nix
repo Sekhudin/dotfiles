@@ -6,11 +6,17 @@
     enable = true;
   };
 
+  # for nvchad purpose
   home.file = {
     ".config/nvim/lua".source = ../config/nvchad/lua;
-    ".config/nvim/.styua.toml".source = ../config/nvchad/.stylua.toml;
+    ".config/nvim/stylua.toml".source = ../config/nvchad/stylua.toml;
     ".config/nvim/init.lua".source = ../config/nvchad/init.lua;
   };
+
+  # # for lazyvim purpose
+  # home.file = {
+
+  # };
 
   xdg.desktopEntries.nvim = {
     name = "Neovim";

@@ -31,9 +31,11 @@ in
     pkgs.jq
     pkgs.yq
     pkgs.go
+    pkgs.fd
     pkgs.fzf
     pkgs.eza
     pkgs.bat
+    pkgs.curl
     pkgs.gcc
     pkgs.htop
     pkgs.tree
@@ -51,5 +53,6 @@ in
     clipboard = "xclip -selection clipboard";
   };
 
+  home.enableNixpkgsReleaseCheck = false;
   programs.home-manager.enable = true;
 }
