@@ -1,5 +1,4 @@
 return {
-  -- Mason untuk install LSP / DAP / Linters
   {
     "williamboman/mason.nvim",
     lazy = false,
