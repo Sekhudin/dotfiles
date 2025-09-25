@@ -7,3 +7,7 @@ fi
 if command -v wps >/dev/null 2>&1; then
   alias 'wps:open'='nohup wps >/dev/null 2>&1 & disown'
 fi
+
+if command -v nixgl kitty >/dev/null 2>&1; then
+  alias 'kitty:open'='nohup nixgl kitty >/dev/null 2>&1 & disown'
+fi
