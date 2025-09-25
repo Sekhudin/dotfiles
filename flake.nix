@@ -1,5 +1,5 @@
 {
-  description = "Home Manager configuration of syaikhu";
+  description = "Syaikhu's Home Manager Configurations";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";

@@ -77,17 +77,6 @@
           key = "Disk";
           folders = "/";
         }
-        {
-          type = "localip";
-          key = "LAN IP";
-          showIpv6 = true;
-          showPrefixLen = false;
-        }
-        {
-          type = "publicip";
-          key = "WAN IP";
-          timeout = 1000;
-        }
       ];
     };
   };
