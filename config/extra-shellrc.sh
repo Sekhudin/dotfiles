@@ -11,3 +11,7 @@ fi
 if command -v nixgl kitty >/dev/null 2>&1; then
   alias 'kitty:open'='nohup nixgl kitty >/dev/null 2>&1 & disown'
 fi
+
+if command -v firefox >/dev/null 2>&1; then
+  alias 'firefox:open'='nohup firefox >/dev/null 2>&1 & disown'
+fi

@@ -13,11 +13,9 @@ in
     ./modules/git.nix
     ./modules/kitty.nix
     ./modules/nvim.nix
-    ./modules/oh-my-posh.nix
     ./modules/ssh.nix
     ./modules/starship.nix
     ./modules/tmux.nix
-    ./modules/vscode.nix
     ./modules/zsh.nix
   ];
 

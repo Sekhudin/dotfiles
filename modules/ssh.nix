@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  programs.starship = {
+  programs.ssh = {
     enable = true;
   };
 }
