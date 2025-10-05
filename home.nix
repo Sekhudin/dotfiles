@@ -42,7 +42,7 @@ in
     pkgs.ripgrep
     pkgs.nodejs_22
     pkgs.python313
-    pkgs.nixpkgs-fmt
+    pkgs.nixfmt-rfc-style
   ];
 
   home.sessionVariables = { };
