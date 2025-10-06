@@ -9,6 +9,7 @@ in
 {
   imports = [
     ./modules/bash.nix
+    ./modules/direnv.nix
     ./modules/fastfetch.nix
     ./modules/git.nix
     ./modules/kitty.nix
