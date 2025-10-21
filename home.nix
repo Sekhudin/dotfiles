@@ -12,7 +12,6 @@ in
     ./modules/direnv.nix
     ./modules/fastfetch.nix
     ./modules/git.nix
-    ./modules/hyprland.nix
     ./modules/kitty.nix
     ./modules/nvim.nix
     ./modules/ssh.nix
