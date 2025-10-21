@@ -6,20 +6,18 @@
 }:
 
 let
-  wallpaper = "${config.home.homeDirectory}/Pictures/wallpapers/macos-wallpaper.jpg";
+  wallpaper = "${config.home.homeDirectory}/.local/share/wallpapers/deer-landscape-01.jpg";
 in
 {
   home.packages = with pkgs; [
     hyprcursor
-    nordic-theme
+    nordic
     papirus-icon-theme
     bibata-cursors
   ];
 
-  programs.hyprland = {
+  wayland.windowManager.hyprland = {
     enable = true;
-    enableXwayland = true;
-
     extraConfig = ''
       monitor=,preferred,auto,1
 
@@ -166,20 +164,29 @@ in
 
   services.mako = {
     enable = true;
-    font = "JetBrainsMono Nerd Font 11";
-    backgroundColor = "#202020";
-    textColor = "#ffffff";
-    borderColor = "#88C0D0";
-    borderSize = 2;
-    borderRadius = 8;
-    defaultTimeout = 5000;
+    settings = {
+      default-timeout = 3000;
+      border-size = 2;
+      border-radius = 8;
+      border-color = "#88C0D0";
+      text-color = "#ECEFF4";
+      background-color = "#2E3440";
+      font = "JetBrainsMono Nerd Font 11";
+    };
+    # font = "JetBrainsMono Nerd Font 11";
+    # backgroundColor = "#202020";
+    # textColor = "#ffffff";
+    # borderColor = "#88C0D0";
+    # borderSize = 2;
+    # borderRadius = 8;
+    # defaultTimeout = 5000;
   };
 
   gtk = {
     enable = true;
     theme = {
       name = "Nordic";
-      package = pkgs.nordic-theme;
+      package = pkgs.nordic;
     };
     iconTheme = {
       name = "Papirus";
@@ -193,6 +200,6 @@ in
   };
 
   home.file = {
-    ".config/wallpaper".source = "../config/wallpaper";
-  }
+    ".local/share/wallpapers".source = "../.local/wallpapers";
+  };
 }
