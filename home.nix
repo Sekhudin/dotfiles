@@ -8,6 +8,7 @@ let
 in
 {
   imports = [
+    ./modules/android.nix
     ./modules/bash.nix
     ./modules/direnv.nix
     ./modules/fastfetch.nix
