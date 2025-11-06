@@ -2,13 +2,13 @@
 
 {
   programs.zed-editor = {
-    enable = true;
-    extentions = [
+    enable = false;
+    extensions = [
       "html"
       "javascript"
       "typescript"
       "nix"
       "biome"
     ];
-  }
+  };
 }
