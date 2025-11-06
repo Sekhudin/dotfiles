@@ -18,6 +18,7 @@ in
     ./modules/ssh.nix
     ./modules/starship.nix
     ./modules/tmux.nix
+    ./modules/zed.nix
     ./modules/zsh.nix
   ];
 
